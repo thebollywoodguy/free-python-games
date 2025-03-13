@@ -128,7 +128,8 @@ def move():
 
     up()
     goto(pacman.x + 10, pacman.y + 10)
-    dot(20, 'yellow')
+    dot(20, 'white')
+    # Changed color from yellow to white
 
     for point, course in ghosts:
         if valid(point + course):
@@ -146,7 +147,7 @@ def move():
 
         up()
         goto(point.x + 10, point.y + 10)
-        dot(20, 'red')
+        dot(20, 'red') 
 
     update()
 
